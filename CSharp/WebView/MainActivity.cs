@@ -63,7 +63,8 @@ namespace WebView
             e.Handled = false;
             if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
             {
-                m_webView.LoadUrl(m_textUri.Text);
+                string strUri = m_textUri.Text;
+                ShowWebView(ref strUri);
                 e.Handled = true;
             }
         }
