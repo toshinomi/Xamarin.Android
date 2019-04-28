@@ -37,28 +37,28 @@ namespace WebView
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        private void OnClickBack(object sender, EventArgs e)
+        public void OnClickBack(object sender, EventArgs e)
         {
             BackWebView();
 
             return;
         }
 
-        private void OnClickFoward(object sender, EventArgs e)
+        public void OnClickFoward(object sender, EventArgs e)
         {
             FowardWebView();
 
             return;
         }
 
-        private void OnClickReload(object sender, EventArgs e)
+        public void OnClickReload(object sender, EventArgs e)
         {
             ReloadWebView();
 
             return;
         }
 
-        private void OnKeyPressTextUri(object sender, View.KeyEventArgs e)
+        public void OnKeyPressTextUri(object sender, View.KeyEventArgs e)
         {
             e.Handled = false;
             if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
