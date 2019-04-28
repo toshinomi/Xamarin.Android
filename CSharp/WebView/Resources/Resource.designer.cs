@@ -2507,11 +2507,11 @@ namespace WebView
 			// aapt resource value: 0x7f080020
 			public const int disableHome = 2131230752;
 			
+			// aapt resource value: 0x7f08008e
+			public const int editTextUri = 2131230862;
+			
 			// aapt resource value: 0x7f08007e
 			public const int edit_query = 2131230846;
-			
-			// aapt resource value: 0x7f08008e
-			public const int edittextUri = 2131230862;
 			
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
@@ -2856,7 +2856,7 @@ namespace WebView
 			public const int visible = 2131230898;
 			
 			// aapt resource value: 0x7f08008f
-			public const int webView1 = 2131230863;
+			public const int webView = 2131230863;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;

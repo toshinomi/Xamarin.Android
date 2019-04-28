@@ -37,28 +37,28 @@ namespace WebView
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        private void OnClick_Back(object sender, EventArgs e)
+        private void OnClickBack(object sender, EventArgs e)
         {
             BackWebView();
 
             return;
         }
 
-        private void OnClick_Foward(object sender, EventArgs e)
+        private void OnClickFoward(object sender, EventArgs e)
         {
             FowardWebView();
 
             return;
         }
 
-        private void OnClick_Reload(object sender, EventArgs e)
+        private void OnClickReload(object sender, EventArgs e)
         {
             ReloadWebView();
 
             return;
         }
 
-        private void OnKeyPress_textUri(object sender, View.KeyEventArgs e)
+        private void OnKeyPressTextUri(object sender, View.KeyEventArgs e)
         {
             e.Handled = false;
             if (e.Event.Action == KeyEventActions.Down && e.KeyCode == Keycode.Enter)
@@ -72,18 +72,18 @@ namespace WebView
         public void InitLayout()
         {
             m_btnBack = (Button)FindViewById(Resource.Id.buttonBack);
-            m_btnBack.Click += OnClick_Back;
+            m_btnBack.Click += OnClickBack;
 
             m_btnForward = (Button)FindViewById(Resource.Id.buttonForward);
-            m_btnForward.Click += OnClick_Foward;
+            m_btnForward.Click += OnClickFoward;
 
             m_btnReload = (Button)FindViewById(Resource.Id.buttonReload);
-            m_btnReload.Click += OnClick_Reload;
+            m_btnReload.Click += OnClickReload;
 
-            m_textUri = (EditText)FindViewById(Resource.Id.edittextUri);
-            m_textUri.KeyPress += OnKeyPress_textUri;
+            m_textUri = (EditText)FindViewById(Resource.Id.editTextUri);
+            m_textUri.KeyPress += OnKeyPressTextUri;
 
-            m_webView = (Android.Webkit.WebView)FindViewById(Resource.Id.webView1);
+            m_webView = (Android.Webkit.WebView)FindViewById(Resource.Id.webView);
 
             return;
         }

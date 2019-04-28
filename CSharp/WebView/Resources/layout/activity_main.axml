@@ -29,7 +29,7 @@
         android:id="@+id/buttonReload"
         android:layout_marginLeft="80.0dp" />
     <EditText
-        android:id="@+id/edittextUri"
+        android:id="@+id/editTextUri"
         android:layout_width="match_parent"
         android:imeOptions="actionGo"
         android:inputType="text"
@@ -38,6 +38,6 @@
     <android.webkit.WebView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/webView1"
+        android:id="@+id/webView"
         android:layout_marginTop="50.0dp" />
 </RelativeLayout>
